@@ -9,7 +9,6 @@ describe('all tests', () => {
 
 
     it('Test One', (done) => {
-        expect(tests.one.then, "test one did not return a promise").to.exist;
         tests.one().then(res => {
             res.should.equal(60);
             done();
@@ -17,7 +16,6 @@ describe('all tests', () => {
     })
 
     it('Test Two', (done) => {
-        expect(tests.two.then, "test two did not return a promise").to.exist;
         tests.two().then(res => {
             res.should.equal('Kotlin');
             done();
@@ -25,7 +23,6 @@ describe('all tests', () => {
     })
 
     it('Test three', (done) => {
-        expect(tests.three.then, "test three did not return a promise").to.exist;
         tests.three().then(res => {
             res.should.equal('Gareth');
             done();
